@@ -1,0 +1,6 @@
+category: X11
+requires: libmemphis0.2_0 girepository-GLib2.0 girepository-x11
+external-source: memphis
+sdesc: "OpenStreetMap rendering library (GObject Introspection data)"
+ldesc: "Memphis is a map-rendering application and a library for 
+OpenStreetMap written in C using eXpat, Cairo and GLib."

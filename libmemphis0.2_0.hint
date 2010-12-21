@@ -1,0 +1,6 @@
+category: X11
+requires: libcairo2 libexpat1 libglib2.0_0
+external-source: memphis
+sdesc: "OpenStreetMap rendering library (runtime)"
+ldesc: "Memphis is a map-rendering application and a library for 
+OpenStreetMap written in C using eXpat, Cairo and GLib."

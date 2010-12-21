@@ -1,0 +1,10 @@
+--- origsrc/memphis-0.2.3/memphis/Makefile.am	2010-05-24 09:00:15.000000000 -0500
++++ src/memphis-0.2.3/memphis/Makefile.am	2010-12-20 00:05:50.773430300 -0600
+@@ -48,6 +48,7 @@ libmemphis_0_2_la_SOURCES = \
+ libmemphis_0_2_la_LIBADD = $(DEPS_LIBS)
+ 
+ libmemphis_0_2_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info $(LIBRARY_VERSION) \
+ 	-export-symbols-regex ^memphis_.*
+ 

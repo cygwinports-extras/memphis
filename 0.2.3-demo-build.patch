@@ -1,0 +1,18 @@
+--- origsrc/memphis-0.2.3/bindings/vala/demos/Makefile.am	2010-06-18 14:51:29.000000000 -0500
++++ src/memphis-0.2.3/bindings/vala/demos/Makefile.am	2010-12-20 00:17:35.965408800 -0600
+@@ -1,5 +1,5 @@
+ 
+-bin_PROGRAMS = example
++noinst_PROGRAMS = example
+ 
+ example_SOURCES = \
+ 	example.vala
+@@ -14,7 +14,7 @@ INCLUDES = \
+ 
+ example_LDADD = \
+ 	$(VALA_EXAMPLE_LIBS) \
+-	$(top_srcdir)/memphis/libmemphis-0.2.la
++	$(top_builddir)/memphis/libmemphis-0.2.la
+ 
+ CLEANFILES = \
+ 	example.c \
