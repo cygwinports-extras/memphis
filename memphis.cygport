@@ -1,8 +1,15 @@
 inherit gnome2
 
-DESCRIPTION="OpenStreetMap rendering library"
-HOMEPAGE="http://trac.openstreetmap.ch/trac/memphis/"
-SRC_URI="http://wenner.ch/files/public/mirror/memphis/${P}.tar.gz"
+NAME="memphis"
+VERSION=0.2.3
+RELEASE=2
+CATEGORY="Libs"
+SUMMARY="OpenStreetMap rendering library"
+DESCRIPTION="Memphis is a map-rendering application and a library for
+OpenStreetMap written in C using eXpat, Cairo and GLib."
+HOMEPAGE="http://www.openstreetmap.ch"
+SRC_URI="http://wenner.ch/files/public/mirror/memphis/memphis-${VERSION}.tar.gz"
+SRC_DIR="memphis-${VERSION}"
 
 PATCH_URI="
 	0.2.3-no-undefined.patch
@@ -13,9 +20,8 @@ PKG_NAMES="libmemphis0.2_0 libmemphis0.2-devel girepository-Memphis0.2 vala-memp
 libmemphis0_2_0_CONTENTS="usr/bin/cygmemphis-0.2-0.dll usr/share/doc/ usr/share/memphis/"
 libmemphis0_2_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_Memphis0_2_CONTENTS="usr/*/gir*/Memphis-0.2.*"
-vala_memphis0_2_CONTENTS="usr/share/vala*/"
+vala_memphis0_2_CONTENTS="usr/share/vala/vapi/memphis-0.2.*"
 
 DISTCLEANFILES="memphis/*.gir"
 
 CYGCONF_ARGS="--enable-vala"
-MAKEOPTS+=" vapidir=/usr/share/vala-0.10/vapi"

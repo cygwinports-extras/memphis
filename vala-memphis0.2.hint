@@ -1,6 +1,0 @@
-category: X11
-requires: libmemphis0.2-devel vala vala-cairo
-external-source: memphis
-sdesc: "OpenStreetMap rendering library (Vala bindings)"
-ldesc: "Memphis is a map-rendering application and a library for 
-OpenStreetMap written in C using eXpat, Cairo and GLib."

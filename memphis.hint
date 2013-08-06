@@ -1,4 +1,0 @@
-category: X11
-sdesc: "OpenStreetMap rendering library (sources)"
-ldesc: "Memphis is a map-rendering application and a library for 
-OpenStreetMap written in C using eXpat, Cairo and GLib."
